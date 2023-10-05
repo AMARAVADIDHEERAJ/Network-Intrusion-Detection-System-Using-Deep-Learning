@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html margin: auto; width: 960px;>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+    <head>
+      <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NIDS Prediction</title>
+      <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css') }}">
+    
+		
+        <style>
+        
+        select { 
+        	width: 100%; 
+        	margin-bottom: 10px; 
+        	background: #fff;
+        	border: none;
+        	outline: none;
+        	padding: 10px;
+        	font-size: 13px;
+        	color: #092756;
+        	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        	border: 1px solid rgba(0,0,0,0.3);
+        	border-radius: 4px;
+        	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+        }
+        
+		.login2{
+			top: 42%;
+			left: 60%;
+			width: 450px;
+			height: 200px;
+			resize : both;
+        }
+		
+		div {
+		  <!--background-color: #092756; -->
+		  width: 150px;
+		  height: 300px;
+		  <!-- border: 1px solid black;-->
+		}
+
+        </style>
+    </head>
+    
+    <body>
+		<h1 style="color:PINK">  
+			NETWORK INTRUSION DETECTION SYSTEM USING DEEP LEARNING<br><br>
+        </h1>
+
+	<div class="login">
+        
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action= "/y_predict" method="post" text-size = 8px>  <br>   
+            SourceIP <br><input type="text" name="SourceIP" placeholder="SourceIP" required="required" value = "192.168.20.205"/>
+            <br>DestinationIP <br><input type="text" name="DestinationIP" placeholder="DestinationIP" required="required" value = "8.8.8.4"/>
+            <br>SourcePort <br><input type="text" name="SourcePort" placeholder="SourcePort" required="required" value = "41018"/>
+            <br>Destinationport <br><input type="text" name="Destinationport" placeholder="Destinationport" required="required" value = "443"/>
+            <br>TimeStamp <br><input type="text" name="TimeStamp" placeholder="TimeStamp" required="required" value = "25-03-2020 04:40"/>
+            <br>Duration <br><input type="text" name="Duration" placeholder="Duration" required="required" value = "120.73139" />
+			<br>FlowBytesSent <br><input type="text" name="FlowBytesSent" placeholder="FlowBytesSent" required="required" value = "46446"/>
+			<br>FlowSentRate <br><input type="text" name="FlowRecievedRate" placeholder="FlowRecievedRate" required="required" value = "384.705257"/>
+			<br>FlowBytesRecieved <br><input type="text" name="FlowBytesRecieved" placeholder="FlowBytesRecieved" required="required" value = "85465"/>
+			<br>FlowRecievedRate <br><input type="text" name="FlowRecievedRate" placeholder="FlowRecievedRate" required="required" value = "707.89379"/>
+			<br>PacketLengthVariance <br><input type="text" name="PacketLengthVariance" placeholder="PacketLengthVariance" required="required" value = "5668.351"/>
+			<br>PacketLengthStandardDeviation <br><input type="text" name="PacketLengthStandardDeviation" placeholder="PacketLengthStandardDeviation" required="required" value = "75.288452"/>
+			<br>PacketLengthMean <br><input type="text" name="PacketLengthMean" placeholder="PacketLengthMean" required="required" value = "117.04614"/>
+			<br>PacketLengthMedian <br><input type="text" name="PacketLengthMedian" placeholder="PacketLengthMedian" required="required" value = "107"/>
+			<br>PacketLengthMode <br><input type="text" name="PacketLengthMode" placeholder="PacketLengthMode" required="required" value = "68"/>
+			<br>PacketLengthSkewFromMedian <br><input type="text" name="PacketLengthSkewFromMedian" placeholder="PacketLengthSkewFromMedian" required="required" value = "0.400306"/>
+			<br>PacketLengthSkewFromMode <br><input type="text" name="PacketLengthSkewFromMode" placeholder="PacketLengthSkewFromMode" required="required" value = "0.6514431"/>
+			<br>PacketLengthCoefficientofVariation <br><input type="text" name="PacketLengthCoefficientofVariation" placeholder="PacketLengthCoefficientofVariation" required="required" value = "0.6432374"/>
+            <br>PacketTimeVariance <br><input type="text" name="PacketTimeVariance" placeholder="PacketTimeVariance" required="required" value = "1290.7266"/>
+			<br>PacketTimeStandardDeviation <br><input type="text" name="PacketTimeStandardDeviation" placeholder="PacketTimeStandardDeviation" required="required" value = "35.926684"/>
+			<br>PacketTimeMean <br><input type="text" name="PacketTimeMean" placeholder="PacketTimeMean" required="required" value = "57.744948"/>
+			<br>PacketTimeMedian <br><input type="text" name="PacketTimeMedian" placeholder="PacketTimeMedian" required="required" value = "57.464"/>
+			<br>PacketTimeMode <br><input type="text" name="PacketTimeMode" placeholder="PacketTimeMode" required="required" value = "47.056"/>
+			<br>PacketTimeSkewFromMedian <br><input type="text" name="PacketTimeSkewFromMedian" placeholder="PacketTimeSkewFromMedian" required="required" value = "0.0234"/>
+			<br>PacketTimeSkewFromMode <br><input type="text" name="PacketTimeSkewFromMode" placeholder="PacketTimeSkewFromMode" required="required" value = "0.297" />
+			<br>PacketTimeCoefficientofVariation <br><input type="text" name="PacketTimeCoefficientofVariation" placeholder="PacketTimeCoefficientofVariation" required="required" value = "0.623" />
+            <br>ResponseTimeTimeVariance <br><input type="text" name="ResponseTimeTimeVariance" placeholder="ResponseTimeTimeVariance" required="required" value = "0.000074"/>
+			<br>ResponseTimeTimeStandardDeviation <br><input type="text" name="ResponseTimeTimeStandardDeviation" placeholder="ResponseTimeTimeStandardDeviation" required="required" value = "0.0083"/>
+			<br>ResponseTimeTimeMean <br><input type="text" name="ResponseTimeTimeMean" placeholder="ResponseTimeTimeMean" required="required" value = "0.012" />
+			<br>ResponseTimeTimeMedian <br><input type="text" name="ResponseTimeTimeMedian" placeholder="ResponseTimeTimeMedian" required="required" value = "0.015"/>
+			<br>ResponseTimeTimeMode <br><input type="text" name="ResponseTimeTimeMode" placeholder="ResponseTimeTimeMode" required="required" value = "0.015" />
+			<br>ResponseTimeTimeSkewFromMedian <br><input type="text" name="ResponseTimeTimeSkewFromMedian" placeholder="ResponseTimeTimeSkewFromMedian" required="required" value = "1.205"/>
+			<br>ResponseTimeTimeSkewFromMode <br><input type="text" name="ResponseTimeTimeSkewFromMode" placeholder="ResponseTimeTimeSkewFromMode" required="required" value = "0.399"/>
+			<br>ResponseTimeTimeCoefficientofVariation <br><input type="text" name="ResponseTimeTimeCoefficientofVariation" placeholder="ResponseTimeTimeCoefficientofVariation" required="required" value = "0.704"/><br>
+			<br>
+			<br><button type="submit" class="btn btn-warning btn-block btn-large">Predict</button><br><br>
+			<img src="/static/{{ prediction_text }}" alt="Please Enter the values">
+    </form>
+	</div> 
+    </body>
+</html>
+

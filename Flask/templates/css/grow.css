@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+ * {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+}
+html body {
+	background-color:  #6633cc;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+ .middle {
+	 width: 100%;
+	 margin: 0 auto;
+}
+ .page {
+	 float: left;
+	 width: 100%;
+}
+ ul.main {
+	 list-style: none;
+	 float: left;
+	 width: 250px;
+	 margin: 60px 0px 0px 0px;
+}
+ ul.main li {
+	 float: left;
+	 width: 100%;
+	 margin: 25px 0px 0px 0px;
+}
+ ul.main li:nth-child(1) a {
+	 border-color: #ff6898;
+}
+ ul.main li:nth-child(1) a:before {
+	 background-color: #ff6898;
+}
+ ul.main li:nth-child(1) a:after {
+	 background-color: #ff6898;
+}
+ ul.main li:nth-child(2) a {
+	 border-color: #f87dc7;
+}
+ ul.main li:nth-child(2) a:before {
+	 background-color: #f87dc7;
+}
+ ul.main li:nth-child(2) a:after {
+	 background-color: #f87dc7;
+}
+ ul.main li:nth-child(3) a {
+	 border-color: #f87de4;
+}
+ ul.main li:nth-child(3) a:before {
+	 background-color: #f87de4;
+}
+ ul.main li:nth-child(3) a:after {
+	 background-color: #f87de4;
+}
+
+ ul.main li a {
+	 float: left;
+	 width: 100%;
+	 height: 50px;
+	 line-height: 50px;
+	 margin: 0 0 5px 0;
+	 padding: 0 10px;
+	 background-color: #fff;
+	 border-bottom: 4px solid;
+	 color: #333;
+	 font-family: 'georgian', cursive,bold;
+	 text-decoration:none;
+	 font-size: 25px;
+	 text-indent: 0;
+	 position: relative;
+	 transition: 0.5s;
+	 border-radius:10px;
+}
+ ul.main li a span {
+	 position: relative;
+	 z-index: 1; 
+}
+ ul.main li a:before {
+	 content: '';
+	 width: 100%;
+	 height: 0%;
+	 position: absolute;
+	 left: 0;
+	 bottom: 0;
+	 transition: 0.2s;
+}
+ ul.main li a:after {
+	 content: '';
+	 width: 0;
+	 height: 4px;
+	 position: absolute;
+	 left: 50%;
+	 transition: 0.4s;
+}
+ ul.main li a:hover {
+	 color: #fff;
+	 text-indent: 8px;
+}
+ ul.main li a:hover:before {
+	 height: 100%;
+}
+ ul.main li a:hover:after {
+	 width: 100%;
+	 left: 0;
+}
+ .right {
+	 float: left;
+	 width: 1210px;
+	 height: 98vh;
+	 margin: 10px 0 0 20px;
+	 padding: 20px 20px 0 20px;
+	 background: rgba(255,99,71,0.6);
+	 border-radius:50px;
+	 border-left: 4px solid #ffffff;
+	 border-right: 4px solid #ffffff;
+}
+ .right h1 {
+	 margin: -10px 0 0 0;
+	 color: #fff;
+	 font-family: 'Times New Roman', cursive;
+	 font-size: 42px;
+}
+ .right h4 {
+	 color: rgb(0,0,0);
+	 font-family: 'Times New Roman', cursive;
+	 font-size: 25px;
+}
+
+
+/*This is the CSS for the bottom Social Media handles*/
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(146, 11, 11, 0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #ff0000;
+  }
+  .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #ff0000;
+  }
+
+  .guide summary {
+    background: #A83D50;
+    color: white;
+    margin: 0;
+}
+  .guide details {
+    font-size: 20px;
+    background: #f87d9b;
+    color: white;
+    margin: 0;
+}
+
+#guide>details[open]>summary{
+  background: #A83D50;
+}
+
+#guide>details>ul,li,p,td,th,tr {
+    color: #A83D50;
+}
+
+#guide>details>table{
+  border: 1px solid #A83D50;
+}
+  /*Footer class*/
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: #000115;
+  }
+
+  /*Copyright watermark in the footer right side*/
+  .copyright {
+    position: fixed;
+    right:5;
+    bottom:5;
+    color: #000115;
+
+  }
+ .grow {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 22%;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+.grow:hover {
+  height: 145px;
+}
+
+.grow {
+  padding: 5px 5px 5px 5px;
+  border-radius:10px;
+    height: 50px; 
+    width: 22%; 
+    margin: 5px 1% 5px 1%; 
+    float: left; 
+    position: relative; 
+    transition:height 0.5s; 
+    -webkit-transition:height 0.5s; 
+    text-align: center;
+
+}
+.grow:hover {
+    height: 115px; /* This is the height on hover */
+}

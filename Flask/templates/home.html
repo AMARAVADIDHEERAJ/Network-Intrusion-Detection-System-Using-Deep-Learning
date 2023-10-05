@@ -1,0 +1,882 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="css/stylesheet_home.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet_home.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <style>
+         img {
+             max-width: 100%;
+         }
+		@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+		@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+		/*Design of the body backgroun*/
+		html body{
+			background-image:url("../static/background_img.png");
+			font-family:'Montserrat';
+
+		}
+
+		/*Toggle button on the tipn right */
+		.toggle{
+			position: absolute;
+		width: 145px;
+		height: 70px;
+		left: 56px;
+		top: 59px;
+		background: #B83253;
+		border-radius: 50px;
+		}
+
+		/*Middle heading WELCOME TO MOTHEHOOD*/
+		.heading{
+
+			position: absolute;
+		width: min(1372px,80%,10020vh);
+		max-width: 80%;
+		height: 20%;
+		left: 10%;
+		top: 15%;
+
+		font-family:'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 120px;
+		line-height: 156px;
+		text-align: center;
+		text-transform: uppercase;
+		text-size-adjust: auto;
+
+		color: #000000;
+		}
+
+
+		/*Button register*/
+		#reg{
+		position: absolute;
+		width: 450px;
+		height: 100px;
+		left: 36%;
+		top: 60%;
+
+		font-family: Comic Sans MS;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 55px;
+		text-align: center;
+		cursor: pointer;
+		color: #000000;
+
+		background: #f41a1d;
+		border-radius: 60px;
+
+		}
+		.reg:hover {
+		  color: rgba(255, 255, 255, 0);
+		  border-radius: 60px; 
+		  box-shadow: 0 0 5px #ffffff,
+			  0 0 25px #ffffff,
+			  0 0 50px #ffffff,
+			  0 0 100px #ffffff;  
+		}
+
+		/*CSS for Already have a Account Login*/
+		.signup{
+			position: absolute;
+		width: 601px;
+		height: 0%;
+		left: 31%;
+		top: 75%;
+
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+
+		color: #0c0700;
+		}
+
+		a:link, a:visited,  a:hover, a:active
+		{
+		  text-decoration: none;  
+		  color: inherit;
+		}
+		/*Font family import*/
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+		.nav111 .button{
+		  display: inline-block;
+		  height: 60px;
+		  width: 60px;
+		  float: left;
+		  margin: 0 10px;
+		  background: #8FD4CF;
+		  border-radius: 50px;
+		  cursor: pointer;  
+		}
+
+		.nav111 .button .icon{
+		  display: inline-block;
+		  height: 60px;
+		  width: 60px;
+		  text-align: center;
+		  border-radius: 50px;  
+		}
+
+		.nav111 .button .icon i
+		{
+		  color: rgb(34, 34, 34);
+		  font-size: 25px;
+		  line-height: 60px; 
+		}
+		.nav111 .button:hover {
+			color: rgba(255, 255, 255, 1);
+			border-radius: 50px; 
+			box-shadow: 0 10px 5px #ffffff,
+					0 10px 25px #ffffff,
+					0 10px 50px #ffffff,
+					0 10px 100px #ffffff;  
+		  }
+
+
+
+
+		/*This is the CSS for the bottom Social Media handles*/
+		.wrapper .button{
+			display: inline-block;
+			height: 60px;
+			width: 60px;
+			float: left;
+			margin: 0 5px;
+			overflow: hidden;
+			background: #ffffff;
+			border-radius: 50px;
+			cursor: pointer;
+			box-shadow: 0px 10px 10px rgba(146, 11, 11, 0.1);
+			transition: all 0.3s ease-out;
+		  }
+		  .wrapper .button:hover{
+			width: 200px;
+		  }
+		  .wrapper .button .icon{
+			display: inline-block;
+			height: 60px;
+			width: 60px;
+			text-align: center;
+			border-radius: 50px;
+			box-sizing: border-box;
+			line-height: 60px;
+			transition: all 0.3s ease-out;
+		  }
+		  .wrapper .button:nth-child(1):hover .icon{
+			background: #4267B2;
+		  }
+		  .wrapper .button:nth-child(2):hover .icon{
+			background: #1DA1F2;
+		  }
+		  .wrapper .button:nth-child(3):hover .icon{
+			background: #E1306C;
+		  
+		  }
+		  .wrapper .button:nth-child(4):hover .icon{
+			background: #ff0000;
+		  }
+		  .wrapper .button .icon i{
+			font-size: 25px;
+			line-height: 60px;
+			transition: all 0.3s ease-out;
+		  }
+		  .wrapper .button:hover .icon i{
+			color: #fff;
+		  }
+		  .wrapper .button span{
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 60px;
+			margin-left: 10px;
+			transition: all 0.3s ease-out;
+		  }
+		  .wrapper .button:nth-child(1) span{
+			color: #4267B2;
+		  }
+		  .wrapper .button:nth-child(2) span{
+			color: #1DA1F2;
+		  }
+		  .wrapper .button:nth-child(3) span{
+			color: #E1306C;
+		  }
+		  .wrapper .button:nth-child(4) span{
+			color: #ff0000;
+		  }
+
+		  /*Footer class*/
+		  .footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			color: #000115;
+		  }
+
+		  /*Copyright watermark in the footer right side*/
+		  .copyright {
+			position: fixed;
+			right:5;
+			bottom:5;
+			color: #000115;
+
+		  }
+		  #About_Us
+		  {
+			position:absolute;
+			top: 100%;
+			width:100%;
+		  } 
+		  @import url(https://fonts.googleapis.com/css?family=Bungee);
+		  #About_Us h2
+		  {
+			
+			position: relative;
+			width: 1510px;
+			height: 120px;
+			font-family:'Bungee'; 
+			font-size: 72px;
+			line-height: 117px;
+			text-align: center;
+			color: #FFFFFF;
+			text-shadow: 0px 30px 4px rgba(0, 0, 0, 0.25);
+			background: radial-gradient(58.57% 248.38% at 48.11% 50%, #F74CBE 2.69%, rgba(255, 255, 255, 0.65) 100%);
+			background-blend-mode: multiply;
+			filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+			border-radius: 50px;
+		  }
+		  #About_us.slideshow-container {
+			position: center; 
+			
+		  }
+		  .prev,.next{
+			cursor: pointer;
+			position: absolute;
+			top:50%;
+			padding: 10px;
+			background-color: transparent;
+			border-color: transparent;
+			color: white;
+			font-weight: bold;
+			font-size: 25px;
+			transition: 0.6s ease;
+			user-select: none;
+
+		  }
+		  .next {
+			margin-left: 97%;
+			border-radius: 3px 0 0 3px;
+		  }
+		  /* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(187, 57, 164, 0.8);
+		  border-radius: 40%;
+		}
+		.text {
+		  font-family:Georgia, 'Times New Roman', Times, serif; 
+		  color: #f2f2f2;
+		  font-size: 25px; 
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 18%;
+		  margin-left: 55%;
+		}
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 5%;
+		}
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 4.0s;
+		  animation-name: fade;
+		  animation-duration: 4.0s;
+		}
+		@-webkit-keyframes fade {
+		  from {opacity: .4}
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4}
+		  to {opacity: 1}
+		}
+		.mySlides {
+		  display: none;
+		  position:relative;
+		  max-width:100%;
+		  margin-left:8%
+		}
+		/* Rectangle1 */
+		.Rectangle1
+		{
+		  position:absolute;
+		  width: 900px;
+		  height: 400px;
+		  left: 18%;
+		  top: 110%;
+		  background: rgba(182, 76, 247, 0.54);
+		  background-blend-mode: multiply;
+		  mix-blend-mode: normal;
+		  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+		  border-radius: 50px;
+		}
+		/* logo1 */
+		.logo
+		{
+		  position: absolute;
+		  width: 600px;
+		  height: 600px;
+		  left: 60%;
+		  top:85%;
+		  background: url("PNGs/logo.png");
+		}
+		/* Text on AboutUs*/
+		.AboutUstext
+		{
+		  position: absolute;
+		  width: 800px;
+		  height: 350px;
+		  left: 300px;
+		  top: 110%;
+		   font-family:Georgia, Times, serif; 
+		  font-size: 20px;
+		  line-height: 45px;
+		  text-align: center;
+		  color: #FFFFFF;
+		}
+		@import url(https://fonts.googleapis.com/css?family=Bungee);
+		.Reasontext
+		{
+		  position: absolute;
+		  width: 850px;
+		  height: 350px;
+		  left: 320px;
+		  top: 168%;
+		  font-family: 'Bungee';
+		  font-size: 50px;
+		  line-height: 45px;
+		  text-align: center;
+		  color: #E65CBF;
+		}
+
+		/* Ellipse1 */
+		.Ellipse1
+		{
+		  position: absolute;
+		width: 450px;
+		height: 450px;
+		left: 10%;
+		top: 175%;
+		border-radius: 100%;
+		background: linear-gradient(360deg, #E65CBF 8.17%, rgba(230, 92, 191, 0) 85.65%);
+		}
+		/*Pregnant Woman png */
+		.PregWomanpng
+		{
+		  position: absolute;
+		  width: 460px;
+		  height: 550px;
+		  left: 40%;
+		  top: 175%;
+		  background: url( PNGs/PregWoman.png);
+		}
+		  /* For PregWoman */
+		.PregWoman
+		{
+		  position: absolute;
+		  width: 300px;
+		  height: 173px;
+		  left: 65%;
+		  top: 185%;
+		  font-family: 'Chewy';
+		  font-size: 45px;
+		  line-height: 75px;
+		  text-align: center;
+		  color: #FFFFFF;
+		}
+		@import url(https://fonts.googleapis.com/css?family=Chewy);
+		.PregWomanText
+		{
+		  position: absolute;
+		  width: 370px;
+		  height:1250px;
+		  left: 13%;
+		  top: 190%;
+		  font-family: 'Chewy'; 
+		  font-size: 18px;
+		  line-height: 32px;
+		  text-align: center;
+		  color: #FFFFFF;
+		  mix-blend-mode: normal;
+		}
+		/* Ellipse2 */
+		.Ellipse2
+		{
+		  position: absolute;
+		  width: 450px;
+		  height: 450px;
+		  left: 60%;
+		  top:230%;
+		  border-radius: 100%;
+		  background: linear-gradient(360deg, #E65CBF 8.17%, rgba(230, 92, 191, 0) 85.65%);
+		}
+		/* Baby png */
+		.Babypng
+		{
+		  position: absolute;
+		  width: 180px;
+		  height: 260px;
+		  left: 15%;
+		  top: 245%;
+		  background: url(PNGs/Baby.png);
+		}
+		/* For Babies */
+		.Babies
+		{
+		  position: absolute;
+		  width: 515px;
+		  height: 173px;
+		  left: 30%;
+		  top: 260%;
+		   font-family:'Chewy'; 
+		  font-size: 45px;
+		  line-height: 50px;
+		  text-align: center;
+		  color: #FFFFFF;
+		}
+		@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+		.BabiesText
+		{
+		  position: absolute;
+		  width: 365px;
+		  height: 1250px;
+		  left: 63%;
+		  top: 245%;
+		  font-family: 'Chewy';
+		  font-size: 18px;
+		  line-height: 32px;
+		  text-align: center;
+		  color: #ffffff;
+		  mix-blend-mode: normal;
+		}
+		/* Ellipse3 */
+		.Ellipse3
+		{
+		  position: absolute;
+		  width: 450px;
+		  height: 450px;
+		  left: 10%;
+		  top: 285%;
+		  border-radius: 100%;
+		  background: linear-gradient(360deg, #E65CBF 8.17%, rgba(230, 92, 191, 0) 85.65%);
+		  }
+		/* Doctor png */
+		.drpng
+		{
+		  position: absolute;
+		  width: 380px;
+		  height: 440px;
+		  left: 38%;
+		  top: 285%;
+		  background: url(PNGs/Doctor.png);
+		}
+		/* For Dr’s */
+		.Drs
+		{
+		  position: absolute;
+		  width: 515px;
+		  height: 93px;
+		  left: 55%;
+		  top: 320%;
+		   font-family:'Chewy'; 
+		  font-size: 45px;
+		  line-height: 50px;
+		  text-align: center;
+		  color: #FFFFFF;
+		}
+		.DrsText
+		{
+		  position: absolute;
+		  width: 365px;
+		  height: 1250px;
+		  left: 13%;
+		  top: 295%;
+		   font-family:'Chewy'; 
+		  font-size: 18px;
+		  line-height: 32px;
+		  text-align: center;
+		  color: #FFFFFF;
+		  mix-blend-mode: normal;
+		}
+
+
+		/*CONTACT US!*/
+
+		  #Contact_Us {
+					position:absolute;
+				 top: 460%;
+					width:100%;
+				}
+
+			#Contact_Us h3
+				{
+				  
+				position: relative;
+				width: 1510px;
+				height: 120px;
+				font-family:Montserrat; 
+				font-size: 72px;
+				line-height: 117px;
+				text-align: center;
+				color: #FFFFFF;
+				text-shadow: 0px 30px 4px rgba(0, 0, 0, 0.25);
+				background: radial-gradient(58.57% 248.38% at 48.11% 50%, #F74CBE 2.69%, rgba(255, 255, 255, 0.65) 100%);
+				background-blend-mode: multiply;
+				filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+				border-radius: 50px;
+				}
+
+				.container {
+				  position:absolute;
+					  top:110%;                
+						width: 100%;
+						left:8%;
+						background:  #db6fb3;
+						border-radius: 6px;
+						padding: 20px 60px 30px 40px;
+						box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+					}
+
+				.container .content {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+				.container .content .left-side {
+					width: 25%;
+					height: 100%;
+					margin-left: 50%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin-top: 25px;
+					position: relative;
+				}
+
+				.content .left-side::before {
+					content: '';
+					position: absolute;
+					height: 70%;
+					width: 2px;
+					right: -15px;
+					top: 50%;
+					transform: translateY(-50%);
+					background: #afafb6;
+				}
+
+				.content .left-side .details {
+					margin: 14px;
+					text-align: center;
+				}
+
+				.content .left-side .details i {
+					font-size: 30px;
+					color: #F1F1E0;
+					margin-bottom: 10px;
+				}
+
+				.content .left-side .details .topic {
+					font-size: 18px;
+					font-weight: 500;
+				}
+
+				.content .left-side .details .text-one,
+				.content .left-side .details .text-two {
+					font-size: 14px;
+					color: #F1F1E0;
+				}
+
+				.container .content .right-side {
+					width: 75%;
+					margin-left: 75px;
+				}
+
+				.content .right-side .topic-text {
+					font-size: 23px;
+					font-weight: 600;
+					color: #F1F1E0;
+				}
+
+				.right-side .input-box {
+					height: 50px;
+					width: 100%;
+					margin: 12px 0;
+				}
+
+				.right-side .input-box input,
+				.right-side .input-box textarea {
+					height: 100%;
+					width: 100%;
+					border: none;
+					outline: none;
+					font-size: 16px;
+					background: #F0F1F8;
+					border-radius: 6px;
+					padding: 0 15px;
+					resize: none;
+				}
+
+				.right-side .message-box {
+					min-height: 110px;
+				}
+
+				.right-side .input-box textarea {
+					padding-top: 6px;
+				}
+
+				.right-side .button {
+					display: inline-block;
+					margin-top: 12px;
+				}
+
+				.right-side .button input[type="button"] {
+					color: #FC666F;
+					font-size: 18px;
+					outline: none;
+					border: none;
+					padding: 8px 16px;
+					border-radius: 6px;
+					background: #F1F1E0;
+					cursor: pointer;
+					transition: all 0.3s ease;
+				}
+
+				.button input[type="button"]:hover {
+					background: #F1F1E0;
+				}
+
+				@media (max-width: 950px) {
+					.container {
+						width: 90%;
+						padding: 30px 40px 40px 35px;
+					}
+
+					.container .content .right-side {
+						width: 75%;
+						margin-left: 55px;
+					}
+				}
+
+				@media (max-width: 820px) {
+					.container {
+						margin: 40px 0;
+						height: 100%;
+					}
+
+					.container .content {
+						flex-direction: column-reverse;
+					}
+
+					.container .content .left-side {
+						width: 100%;
+						flex-direction: row;
+						margin-top: 40px;
+						justify-content: center;
+						flex-wrap: wrap;
+					}
+
+					.container .content .left-side::before {
+						display: none;
+					}
+
+					.container .content .right-side {
+						width: 100%;
+						margin-left: 0;
+					}
+				}
+				
+						
+			.gmap_canvas { position:absolute;
+							 overflow: hidden;
+							  background: none !important;
+							  height: 500px;
+							  width: 600px;
+							  top:670%;
+							  margin-left: 25%;
+							  border-radius:10%;
+						  }
+
+                    
+
+         </style>
+    </head>
+    <body>    
+        <nav class="navbar">.
+            <div class="nav111">
+               <a href ="home.html"></a>
+                <div class="button">
+                  
+                   <div class="icon">
+                      <i class="fa fa-home"></i>
+                   </div>
+                                  
+                </div>
+               </a>
+                <a href ="myinfo.html">
+                  <div class="button">
+                     <div class="icon" >
+                        <i class="fa fa-info-circle"></i>
+                  </div>
+               </a> 
+                </div>
+                <a href ="predict.html">
+                  <div class="button">
+                     <div class="icon">
+                        <i class="fa fa-cogs"></i>
+                     </div>
+                  </a>
+                  
+                </div>
+                <a href ="report.html">
+                  <div class="button">
+                     <div class="icon">
+                        <i class="fa fa-book"></i>
+                     </div>
+                  </a>
+                </div>
+             </div>
+        </nav>
+			
+            <div id="Home">
+                  <div class="Heading" >
+                     NIDS <BR >PREDICTION
+                  
+               </div>
+               <button class="reg" id="reg" onclick="location.href = 'predict.html';">PREDICT!</button>
+         
+               <!--<div class="toggle">
+         
+               </div>-->
+            </div>
+            <div id="About_Us">
+               <h2>About NIDS </h2>
+               <div class="slideshow-container">
+         
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="../static/home1.jpg"  width=90% >
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="../static/home2.jpg"  width=90%>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="../static/home3.jpg"  width=90% >
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 5</div>
+                      <img src="../static/home4.jpg"  width=90%>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 5</div>
+                      <img src="../static/home5.jpg" width=90%>
+                    </div>
+                   <!-- Next and previous buttons -->
+                  <button class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <button class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+         
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+              <div id="Info">
+               <div class="Rectangle1"></div>
+               <div class="logo"></div>
+               <div class="AboutUstext">A Network-Based Intrusion 
+			   Detection System (NIDS) monitors network traffic patterns to detect suspicious 
+			   activity. Sensors are placed at strategic check points, such as the DMZ or behind a firewall analysing each individual packet 
+			   (inbound and outbound) for malicious activity. It is crucial to consider where the sensors are placed to allow them the most visibility. 
+			   A single sensor can monitor several hosts, but multiple NIDS might be required depending on the amount of traffic going 
+			   to and from all network devices. If abnormal traffic is found, the NIDS will send an alert to the administrator to investigate. 
+               Abnormal behaviour could include network-level Denial of Service attacks, port scanning, or a sharp increase in network traffic.</div>
+			  </div>
+			  <br><br><br>
+     <script>
+         var slideIndex = 1;
+         var myTimer = null;
+         showSlides(slideIndex);            
+        
+         // Next/previous controls
+         function plusSlides(n) {
+             clearTimeout(myTimer);
+             showSlides(slideIndex += n);
+         }
+
+         // Thumbnail image controls
+         function currentSlide(n) {
+             clearTimeout(myTimer);
+             showSlides(slideIndex = n);    
+         }
+
+         function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n==undefined){n = ++slideIndex}
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+         myTimer = setTimeout(showSlides, 4000);
+     }           
+     </script> 
+	
+    </body>
+</html>

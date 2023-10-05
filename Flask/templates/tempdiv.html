@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+  
+<head>
+    <title>
+        JavaScript 
+      | Position a DIV in a specific coordinates.
+    </title>
+    <style>
+        #GFG_DIV {
+            background: green;
+            height: 200px;
+            width: 300px;
+            margin: 0 auto;
+            color: white;
+			overflow : scroll;
+        }
+    </style>
+</head>
+  
+<body style="text-align:center;" id="body">
+    <h1 style="color:green;">  
+            GeeksForGeeks  
+        </h1>
+    <p id="GFG_UP" 
+       style="font-size: 19px;
+              font-weight: bold;">
+    </p>
+	
+	
+    <div id="GFG_DIV">
+
+		<h4>BANK CUSTOMER CHURN PREDICTION</h4>
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action= "/y_predict" method="post">     
+            SourceIP <input type="text" name="SourceIP" placeholder="SourceIP" required="required" value = "default-val"/>
+            DestinationIP <input type="text" name="DestinationIP" placeholder="DestinationIP" required="required" value = "default-val"/>
+            SourcePort <input type="text" name="SourcePort" placeholder="SourcePort" required="required" value = "default-val"/>
+            Destinationport <input type="text" name="Destinationport" placeholder="Destinationport" required="required" value = "default-val"/>
+            TimeStamp <input type="text" name="TimeStamp" placeholder="TimeStamp" required="required" value = "default-val"/>
+            Duration <input type="text" name="Duration" placeholder="Duration" required="required" value = "default-val" />
+			FlowBytesSent <input type="text" name="FlowBytesSent" placeholder="FlowBytesSent" required="required" value = "default-val"/>
+			FlowBytesRecieved <input type="text" name="FlowBytesRecieved" placeholder="FlowBytesRecieved" required="required" value = "default-val"/>
+			FlowRecievedRate <input type="text" name="FlowRecievedRate" placeholder="FlowRecievedRate" required="required" value = "default-val"/>
+			PacketLengthVariance <input type="text" name="PacketLengthVariance" placeholder="PacketLengthVariance" required="required" value = "default-val"/>
+			PacketLengthStandardDeviation <input type="text" name="PacketLengthStandardDeviation" placeholder="PacketLengthStandardDeviation" required="required" value = "default-val"/>
+			PacketLengthMean <input type="text" name="PacketLengthMean" placeholder="PacketLengthMean" required="required" value = "default-val"/>
+			PacketLengthMedian <input type="text" name="PacketLengthMedian" placeholder="PacketLengthMedian" required="required" value = "default-val"/>
+			PacketLengthMode <input type="text" name="PacketLengthMode" placeholder="PacketLengthMode" required="required" value = "default-val"/>
+			PacketLengthSkewFromMedian <input type="text" name="PacketLengthSkewFromMedian" placeholder="PacketLengthSkewFromMedian" required="required" value = "default-val"/>
+			PacketLengthSkewFromMode <input type="text" name="PacketLengthSkewFromMode" placeholder="PacketLengthSkewFromMode" required="required" value = "default-val"/>
+			PacketLengthCoefficientofVariation <input type="text" name="PacketLengthCoefficientofVariation" placeholder="PacketLengthCoefficientofVariation" required="required" value = "default-val"/>
+            PacketTimeVariance <input type="text" name="PacketTimeVariance" placeholder="PacketTimeVariance" required="required" value = "default-val"/>
+			PacketTimeStandardDeviation <input type="text" name="PacketTimeStandardDeviation" placeholder="PacketTimeStandardDeviation" required="required" value = "default-val"/>
+			PacketTimeMean <input type="text" name="PacketTimeMean" placeholder="PacketTimeMean" required="required" value = "default-val"/>
+			PacketTimeMedian <input type="text" name="PacketTimeMedian" placeholder="PacketTimeMedian" required="required" value = "default-val"/>
+			PacketTimeMode <input type="text" name="PacketTimeMode" placeholder="PacketTimeMode" required="required" value = "default-val"/>
+			PacketTimeSkewFromMedian <input type="text" name="PacketTimeSkewFromMedian" placeholder="PacketTimeSkewFromMedian" required="required" value = "default-val"/>
+			PacketTimeSkewFromMode <input type="text" name="PacketTimeSkewFromMode" placeholder="PacketTimeSkewFromMode" required="required" value = "default-val" />
+			PacketTimeCoefficientofVariation <input type="text" name="PacketTimeCoefficientofVariation" placeholder="PacketTimeCoefficientofVariation" required="required" value = "default-val" />
+            ResponseTimeTimeVariance <input type="text" name="ResponseTimeTimeVariance" placeholder="ResponseTimeTimeVariance" required="required" value = "default-val"/>
+			ResponseTimeTimeStandardDeviation <input type="text" name="ResponseTimeTimeStandardDeviation" placeholder="ResponseTimeTimeStandardDeviation" required="required" value = "default-val"/>
+			ResponseTimeTimeMean <input type="text" name="ResponseTimeTimeMean" placeholder="ResponseTimeTimeMean" required="required" value = "default-val" />
+			ResponseTimeTimeMedian <input type="text" name="ResponseTimeTimeMedian" placeholder="ResponseTimeTimeMedian" required="required" value = "default-val"/>
+			ResponseTimeTimeMode <input type="text" name="ResponseTimeTimeMode" placeholder="ResponseTimeTimeMode" required="required" value = "default-val" />
+			ResponseTimeTimeSkewFromMedian <input type="text" name="ResponseTimeTimeSkewFromMedian" placeholder="ResponseTimeTimeSkewFromMedian" required="required" value = "default-val"/>
+			ResponseTimeTimeSkewFromMode <input type="text" name="ResponseTimeTimeSkewFromMode" placeholder="ResponseTimeTimeSkewFromMode" required="required" value = "default-val"/>
+			ResponseTimeTimeCoefficientofVariation <input type="text" name="ResponseTimeTimeCoefficientofVariation" placeholder="ResponseTimeTimeCoefficientofVariation" required="required" value = "default-val"/>
+		<button type="submit" class="btn btn-warning btn-block btn-large">Predict</button>
+		</form><br><br>
+		Our prediction is that " {{ prediction_text }} "
+	</div>
+	
+	
+	
+	
+    <br>
+    <button onClick="GFG_Fun()">
+        click here
+    </button>
+    <p id="GFG_DOWN" 
+       style="color: green; 
+              font-size: 24px; 
+              font-weight: bold;">
+    </p>
+
+</body>
+  
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script>
+
+        </script>
+        
+        <link rel="stylesheet" href="css/signup.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    </head>
+    <body>
+		<!-- link rel="stylesheet" href="css/motherProfile.css"-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/motherProfile.css') }}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <div class="header">
+          NIDS REPORT
+        </div>
+        <div class="container right-panel-active" id="container">
+          <div class="form-container sign-up-container ">
+              <form name="signupForm" onsubmit="return validateForm1()" method="get" action="http://localhost/Healthcare_iwp/html/php/signup.php" >
+                  <h1>Project Details</h1>
+                  <ul class="main">
+				   <li><a href="aim.html"><span>AIM of the Project</span></a></li>
+				   <li><a href="members.html"><span>MEMBERS of Project</span></a></li>
+				   <li><a href="outcome.html"><span>OUTCOME of the project</span></a></li>
+				  </ul>
+            </ul>
+              </form>
+          </div>
+          
+          <div class="overlay-container">
+              <div class="overlay">
+                  <div class="overlay-panel overlay-left">
+				  
+                      <h1>Network Intrusion Detection System</h1><br>
+                      <p>Using Deep Learning</p>
+                      <button class="ghost" id="signIn" onclick="check();">Download PDF :)</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div>
+    <section style="height: 25%;">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+  </section>
+  </div>
+  
+  
+  <script>
+   var pressedButton1 = document.getElementsByName("button1")[0];
+   pressedButton1.addEventListener("click", function (event) {
+      alert("You have pressed the button..........")
+   })
+   <script>
+   var pressedButton2 = document.getElementsByName("button2")[0];
+   pressedButton.addEventListener("click", function (event) {
+      alert("You have pressed the button..........")
+   })
+</script>
+<script>
+   var pressedButton3 = document.getElementsByName("button3")[0];
+   pressedButton.addEventListener("click", function (event) {
+      alert("You have pressed the button..........")
+   })
+</script>
+</script>
+    </body>
+</html>
